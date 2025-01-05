@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+  .card{
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .card-img-top{
+border-radius: 10px;
+height: 400px;
+  }
+  .btn{
+    background-color: black;
+    color:white;
+  }
+
+  .btn:hover{
+  color:white;
+  }
+</style>
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <center>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+  <div class="card" style="width: 18rem; ">
+    <img src="image.png" height="400" id="img_front" class="card-img-top" alt="..." onmouseenter="img_back()" onmouseleave="img_front()">
+    <div class="card-body">
+      <h5 class="card-title">RESORT COLLAR SHIRT</h5>
+      <p class="card-text">PKR 2,589 Regular <span style="color: blue;"> price PKR 3,699</span>
+       <span style="color: red;"> 30% off </span></p>
+      <a href="#" class="btn ">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card" style="width: 18rem; ">
+    <img src="front.png" height="400" id="img_front2" class="card-img-top" alt="..." onmouseenter="img_back2()" onmouseleave="img_front2()">
+    <div class="card-body">
+      <h5 class="card-title">RESORT COLLAR BUTTON DOWN BOX FIT TEXTURED POLO</h5>
+      <p class="card-text">PKR 2,449
+       <span style="color: red;">30% off </span></p>
+      <a href="#" class="btn ">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card" style="width: 18rem; ">
+    <img src="front2.png" height="400" id="img_front3" class="card-img-top" alt="..." onmouseenter="img_back3()" onmouseleave="img_front3()">
+    <div class="card-body">
+      <h5 class="card-title">RESORT COLLAR BUTTON DOWN BOX FIT TEXTURED POLO</h5>
+      <p class="card-text">PKR 2,449
+       <span style="color: red;"> 30% off </span></p>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card" style="width: 18rem; ">
+    <img src="front4.png" height="400" id="img_front4" class="card-img-top" alt="..." onmouseenter="img_back4()" onmouseleave="img_front4()">
+    <div class="card-body">
+      <h5 class="card-title">RESORT COLLAR BUTTON DOWN BOX FIT TEXTURED POLO</h5>
+      <p class="card-text">PKR 2,449
+       <span style="color: red;"> 30% off </span></p>
+      <a href="#" class="btn ">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+</center>
+</body>
+<script>
+function img_front(){
+  let img1 = document.getElementById("img_front");
+  img1.src = "image.png";
+}
+function img_back(){
+  let img1 = document.getElementById("img_front");
+  img1.src = "back.png";
+}
+
+function img_front2(){
+  let img1 = document.getElementById("img_front2");
+  img1.src = "front.png";
+}
+function img_back2(){
+  let img1 = document.getElementById("img_front2");
+  img1.src = "back2.png";
+}
+
+function img_front3(){
+  let img1 = document.getElementById("img_front3");
+  img1.src = "front2.png";
+}
+function img_back3(){
+  let img1 = document.getElementById("img_front3");
+  img1.src = "back3.png";
+}
+
+function img_front4(){
+  let img1 = document.getElementById("img_front4");
+  img1.src = "front4.png";
+}
+function img_back4(){
+  let img1 = document.getElementById("img_front4");
+  img1.src = "back4.png";
+}
+</script>
+</html>
